@@ -15,7 +15,7 @@ RUN npm run build
 # NGINX STAGE
 # ========================================
 
-FROM nginx:1.23-alpine 
+FROM nginx:1.25.4-alpine 
 
 WORKDIR /usr/share/nginx/html/
 
