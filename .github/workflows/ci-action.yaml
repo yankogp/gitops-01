@@ -38,7 +38,7 @@ jobs:
 
 
   test23:
-    name: SonarCloud
+    name: SonarCloud_Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
