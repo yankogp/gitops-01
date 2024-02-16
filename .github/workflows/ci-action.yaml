@@ -28,11 +28,13 @@ jobs:
       - run: npm run build --if-present
 
   TEST:
-    name: Check_Markdown_links
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1   
+      name: gitleaks
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+          with:
+            fetch-depth: 0
+        - uses: gitleaks/gitleaks-action@v2  
 
   test-stage:
     runs-on: ubuntu-latest
