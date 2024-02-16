@@ -27,7 +27,7 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
 
-   TEST_Markdown_Links:
+  TEST:
     name: Check Markdown links
     runs-on: ubuntu-latest
     steps:
