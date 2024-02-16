@@ -28,7 +28,7 @@ jobs:
       - run: npm run build --if-present
 
   TEST:
-    name: Check Markdown links
+    name: Check_Markdown_links
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
